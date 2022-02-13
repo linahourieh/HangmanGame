@@ -1,0 +1,4 @@
+dog:[animal,friendly]
+charbel:[instructor,mean,aggressive]
+eva:[female name,1st female on earth]
+parrot:[animal,smart,comes in colors]
