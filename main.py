@@ -1,7 +1,7 @@
 import time
 
 from OptionScreen import display_options, examples, description
-from choices import choice_2_b, choice_3_b, choice_4_b, choice_5_b,choice_7_b
+from choices import choice_2_b, choice_3_b, choice_4_b, choice_5_b
 from game import play
 
 # import the dictionary file
@@ -59,7 +59,8 @@ def choice_6():
 
 
 def choice_7():
-    choice_7_b(our_dictionary,dic_path)
+    print('GOODBYE')
+    exit
 
 
 # a while loop to keep getting back into the display options screen
