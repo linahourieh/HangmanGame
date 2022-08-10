@@ -62,33 +62,38 @@ def Loading_function():
     print("\n")
 
 
-description = "The computer first selects a secret word at random from a list built into the program. \n" \
-              "The program then prints out a row of dashes one for each letter in the secret word \n" \
-              "The program asks the user to guess a letter. \n" \
+def description(num):
+
+    if num == 1:
+        print("The computer first selects a secret word at random from a list built into the game. \n" \
+            "The game then prints out a row of dashes, each one represents a letter in the secret word. \n" )
+    elif num == 2:
+        print("The game asks the user to guess a letter. \n" \
               "If the user guesses a letter that is in the word, the word is redisplayed with all instances of " \
-              "that letter shown in the correct positions, along with any letters correctly guessed on previous turns.\n" \
-              "If the letter does not appear in the word, the user is charged with an incorrect guess. "
+              "that letter shown in the correct positions, along with any letters correctly guessed on previous turns.\n")
+    else:
+        print("If the letter does not appear in the word, the user is charged with an incorrect guess. ")
 
 
 def example_0():
     example_0_list = ['---', 'c--', 'c-t', 'cat']
     for i in range(len(example_0_list)):
-        time.sleep(0.7)
+        time.sleep(0.3)
         sys.stdout.write("\r" + example_0_list[i % len(example_0_list)])
         sys.stdout.write('   trails 2')
         sys.stdout.flush()
-    time.sleep(0.7)
+    time.sleep(0.3)
     print("    ***You Won!***    ")
 
 
 def example_1():
     example_1_list = ['---', 'c--', 'c-t']
     for i in range(len(example_1_list)):
-        time.sleep(0.7)
+        time.sleep(0.3)
         sys.stdout.write("\r" + example_1_list[i % len(example_1_list)])
         sys.stdout.write(f'   trails {len(example_1_list) - 2 - i + 1}')
         sys.stdout.flush()
-    time.sleep(0.7)
+    time.sleep(0.3)
     print("    ***Game Over***    ")
 
 

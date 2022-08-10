@@ -1,6 +1,6 @@
 import time
 
-from OptionScreen import display_options, examples, description
+from OptionScreen import display_options, example_0,example_1, description
 from choices import choice_2_b, choice_3_b, choice_4_b, choice_5_b
 from game import play
 
@@ -52,8 +52,11 @@ def choice_5():
 
 
 def choice_6():
-    print(description)
-    examples()
+    description(1)
+    description(2)
+    example_0()
+    description(3)
+    example_1()
     global number
     number = display_options()
 
